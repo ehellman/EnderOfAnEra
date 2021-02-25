@@ -141,7 +141,7 @@ They also have an extruder which is good, but I still prefer the BMG extruder wi
 ### Cable sleeve replacement
 (This)[https://www.conrad.com/p/hellermanntyton-170-01001-twist-in-08-helagaine-meshwork-hose-black-541574] is the same one that Prusa uses on their machine, it is very stiff and almost works like a cable chain. It's available in several sizes too so you can have one for your main loom and another one for other electroncis that you attach as well.
 
-## UPGRADES THAT ARE ESSENTIAL
+## **UPGRADES THAT ARE ESSENTIAL**
 These are upgrades that you should go for if you get the chance.
 
 ### Yellow bed springs / silicone bed spacers
