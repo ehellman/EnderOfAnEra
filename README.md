@@ -57,6 +57,10 @@ This can also be fixed by having dual Z leadscrews or a belted Z axis. (see upgr
 
 ### Making sure your bed is lev
 
+## Calibration
+
+I am just going to refer to (this site)[https://teachingtechyt.github.io/calibration.html] made by YouTuber "Teaching Tech", it has everything you will need. Calibrating your extruder E-steps and flow is most important.
+
 ## Troubleshooting
 
 ### BLTouch probe not deploying/stowing properly after using it for a few months
@@ -92,6 +96,18 @@ This is less needed than the X axis since you are less likely to remove the Y be
 #### Creality Silent Mainboard
 I would not buy this again, simply because the SKR is better and cheaper (see good upgrades)
 
+#### Auto Rewind Spool Holder (printable)
+This is a great print on Thingiverse that I have used for a long time. Automatically rewinds the spool when you retract!
+
+#### Lead screw anti-backlash nut
+This is a good upgrade, not needed for most users though.
+
+#### Roller covers
+There are several printable versions of this, but it just clips on to your rollers and prevents them from gathering dust or cables getting stuck in them.
+
+#### Filament runout sensor
+Good upgrades for longer prints if your filament runs out.
+
 ### UPGRADES THAT ARE GOOD
 
 #### Glass bed
@@ -116,6 +132,21 @@ I use dual 12v Sunon blower fans and with Hydra Fan Duct (see ultimate upgrades 
 #### Hero Me / Bullseye fan duct
 This is a good fan duct loved by many users. Easy to print and easy to install. Use PETG for this, not PLA. (See ultimate upgrades section for an even better duct)
 
+#### Dual Z axis lead screws
+There are several kits for these and people seem to have many opinions regarding if it is good to do this with 2 motors or not. My personal opinion is that it is better to do it with 2 motors, even if they work off the same driver. I bought the kit from Funssor on AliExpress. It was alright, but the plate that held the trapezoidal nut did not have a right angle, causing the lead screw to bind so I had to adjust it myself. This is not a beginner level upgrade, but it does 100% get rid of any elephants foot issues and improves print quality overall, especially if you have issues with a drooping X gantry.
+
+#### Replace hotend and electronics fan
+The stock fans are loud and bad. There are several better 4010 fans that are quieter and push more air. If you know your way around electronics you can even buy 12v noctua fans and use a buck converter for some ultra quiet cooling.
+
+#### Micro Swiss all metal hotend
+This is another fantastic upgrade. Drop-in replacement for the stock hotend and uses the same nozzles too. All your fan ducts etc will fit just fine still. This will also allow you to print with high temperature filaments without your PTFE tube degrading and releasing neurotoxins (yikes!). This also handles heat better, allowing you to use much shorter retraction distances. Remember to PID tune after upgrading!
+
+#### Micro Swiss extruder
+They also have an extruder which is good, but I still prefer the BMG extruder with Hydra Fan Duct (see ultimate upgrades section).
+
+#### Cable sleeve replacement
+(This)[https://www.conrad.com/p/hellermanntyton-170-01001-twist-in-08-helagaine-meshwork-hose-black-541574] is the same one that Prusa uses on their machine, it is very stiff and almost works like a cable chain. It's available in several sizes too so you can have one for your main loom and another one for other electroncis that you attach as well.
+
 ### UPGRADES THAT ARE ESSENTIAL
 These are upgrades that you should go for if you get the chance.
 
@@ -138,24 +169,37 @@ These are fantastic mainboards. SKR 1.4 doesn't come with drivers and is a more 
 This is by far the biggest jump in print quality you will see. And it's only a firmware change and then calibration on your part. But while it does work for bowden, it is more recommended changing to direct drive to get the full benefits.
 
 #### BLTouch
+The biggest quality of life upgrade when it comes to bed leveling. Also helps you adjust your prints if your bed is warped. These days I just make sure my gantry is level, then I run the BLTouch and see the bed level graph in BedVisualiser in OctoPrint and adjust the wheels on the bed accordingly, then run it again and adjust until the bed is level.
+
+#### Rear electronics case
+Essential? Yes, if you access your electronics regularly and you have a Raspberry Pi, this is such a nice upgrade because you wont have to flip your printer on the side anymore. There are multiple versions available on Thingiverse. Printing them in PETG is preferred since the electronics generate heat.
 
 ### THE ULTIMATE UPGRADES (My current machine)
 
+#### BLTouch (described above)
+#### Spring steel sheet with PEI (described above)
+#### Yellow bed springs (described above)
+#### Capricorn PTFE tube
+A very short piece between the hotend and extruder
+
+#### Direct Drive conversion
+This, in combination with Linear Advance has been the biggest bump in print quality for me. Linear Advance is just amazing and it feels like it is made for direct drive setups. The Hydra Fan duct (see below) has several mounts for this and is 100% printable apart from the screws and nuts. Remember that you might need a longer stepper motor cable for this.
+
+#### TriangleLab BMG 2.0 Extruder / Bondtech BMG Extruder
+The TriangleLab clone is amazing, by far the best quality clone out there. This is the best extruder I have tried so far, also works fantastically with a pancake stepper motor. There's absolutely no need at all for a big, heavy motor like the stock one.
+
 #### Hydra Fan Duct
-This is an amazing and beautifully designed fan duct system. Supports dual 5015 blower fans as well and has a lot of remixes for modifications. Comes with options for 90 degree, 35 degree and 25 degree  fan ducts.
+This is an amazing and beautifully designed fan duct system. Supports dual 5015 blower fans as well and has a lot of remixes for modifications. Comes with options for 90 degree, 35 degree and 25 degree  fan ducts. I mostly use the 35 degree ducts. Also has several "hats" for direct drive conversions.
 
-#### Direct Drive conversion with a pancake stepper motor
-There's no need to use the heavy, stock extruder motor for this.
+#### Belted Z axis [(Thingiverse)](https://www.thingiverse.com/thing:4243512)
+This is a very recent mod, it attempts to solve the same issue as dual Z screws solves but this also allows you to move your Z axis at the same speed as your X and Y. So you can enable Z hop without adding almost anything to your print time. It also gets rid of all the problems that is caused by lead screws in general. Costs about as much as a dual Z kit, but I would say it is a much better upgrade. This _WILL_ increase your print quality unless you have a perfect lead screw and a perfectly level gantry.
 
-
-Recommended spares:
+## Recommended spares and maintenance
 - Wheels
 - PTFE couplers
 - PTFE tube
+- Grease for lead screws
+- Isopropanol/Isopropyl alcohol (to clean the bed)
+- A spare hotend (yes! this costs like 15 bucks and could save you from a long downtime if something happens to your main hotend, comes with a thermistor and heat cartridge too).
 
-Upgrades:
-- PTFE couplers
-- Dual Z leadscrew kit
-- TFT35 E3 LCD
-
-Avoid upgrades
+During my journey I have also bought kits for JST connectors and Molex Micro-Fit 3 along with crimpers so that I can make my own cables if I want/need a longer one. It has also helped me a lot because I have connectors for the fans right at the hotend so that I can replace/disconnect them easily.
