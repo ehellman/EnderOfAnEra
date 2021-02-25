@@ -3,16 +3,17 @@
 # THE ENDER OF AN ERA.
 In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
 
-1. [Setup](#-setting-up-your-printer)
-2. [Calibration](#-calibration)
-3. [Maintenance check list](#-maintenance-check-list)
+1. [Setup](#setting-up-your-printer)
+2. [Calibration](#calibration)
+3. [Maintenance check list](#maintenance-check-list)
 4. [Troubleshooting](#troubleshooting)
-5. [Upgrades to avoid](#-upgrades-to-avoid)
-6. [Upgrades that are not needed, but are nice](#-upgrades-that-are-not-needed-but-are-nice)
-7. [Upgrades that are good](#-upgrades-that-are-good)
-8. [Upgrades that are essential](#-upgrades-that-are-essential)
-9. [The ultimate upgrades (my printer)](#-the-ultimate-upgrades-my-current-machine)
-10. [Spares, maintenance and tools](#--recommended-spares-maintenance-and-tools)
+5. [Upgrades to avoid](#upgrades-to-avoid)
+6. [Upgrades that are not needed, but are nice](#upgrades-that-are-not-needed-but-are-nice)
+7. [Upgrades that are good](#upgrades-that-are-good)
+8. [Upgrades that are essential](#upgrades-that-are-essential)
+9. [The ultimate upgrades (my printer)](#the-ultimate-upgrades-my-current-machine)
+10. [Spares, maintenance and tools](#recommended-spares-maintenance-and-tools)
+11. [Extra](#extra)
 
 ## Setting up your printer
 This is a crucial step, however it is a step that is thoroughly covered in several build videos online. Tomb of 3D Printing Horrors has an amazing video on assembly that you should follow to get the frame as square as possible. Here's a couple of things that I have learned to always check for the Ender 3.
@@ -132,7 +133,7 @@ Control your printer remotely, upload GCODE via WiFi and start/stop/monitor prin
 ### 5015 blower fans
 I use dual 12v Sunon blower fans and with Hydra Fan Duct (see ultimate upgrades section) I can bridge across my entire build plate.
 
-A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#12v).
+A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#wiring-12v5v-fans-on-a-24v-system-while-still-being-able-to-control-speed).
 
 ### Hero Me / Bullseye fan duct
 This is a good fan duct loved by many users. Easy to print and easy to install. Use PETG for this, not PLA. (See ultimate upgrades section for an even better duct)
@@ -143,7 +144,7 @@ There are several kits for these and people seem to have many opinions regarding
 ### Replace hotend and electronics fan
 The stock fans are loud and bad. There are several better 4010 fans that are quieter and push more air. If you know your way around electronics you can even buy 12v noctua fans and use a buck converter for some ultra quiet cooling.
 
-A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#12v).
+A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#wiring-12v5v-fans-on-a-24v-system-while-still-being-able-to-control-speed).
 
 ### Micro Swiss all metal hotend
 This is another fantastic upgrade. Drop-in replacement for the stock hotend and uses the same nozzles too. All your fan ducts etc will fit just fine still. This will also allow you to print with high temperature filaments without your PTFE tube degrading and releasing neurotoxins (yikes!). This also handles heat better, allowing you to use much shorter retraction distances. Remember to PID tune after upgrading!
@@ -215,7 +216,6 @@ During my journey I have also bought kits for JST connectors and Molex Micro-Fit
 
 ### Wiring 12v/5v fans on a 24v system while still being able to control speed
 
-If you go through a buck converter with both the VCC and GND wires the capacitor on the buck converter will filter out the GND signals coming from the mainboard which is attempting to control speed, this will result in your fan being set to 100% as soon as it turns on. To work around this you have to draw power from the PSU and lower that voltage to 12V/5V, then combine that VCC with the GND from the mainboard. PLEASE NOTE: This PSU has to be the same PSU powering the mainboard. The buck converter and mainboard has to have a common GND.
+If you go through a buck converter with both the VCC and GND wires the capacitor on the buck converter will filter out the GND signals coming from the mainboard which is attempting to control speed, this will result in your fan being set to 100% as soon as it turns on. To work around this you have to draw power from the PSU and lower that voltage to 12V/5V, then combine that VCC with the GND from the mainboard. PLEASE NOTE: This PSU has to be the same PSU powering the mainboard. The buck converter and mainboard has to have a common GND. For example:
 
-Wiring scheme:
 ![12v/5v on 24v](12v-fans-on-24v-3d-printer.png)
