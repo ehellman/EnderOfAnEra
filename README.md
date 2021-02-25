@@ -55,7 +55,19 @@ Place the X gantry about halfway up from the bed on the Z axis. Now use a ruler 
 
 This can also be fixed by having dual Z leadscrews or a belted Z axis. (see upgrades section)
 
+### Making sure your bed is lev
 
+## Troubleshooting
+
+### BLTouch probe not deploying/stowing properly after using it for a few months
+It is most likely not broken and I cannot believe I dont see more people talking about this. Eventually this will happen to your probe, it is because it is deployed and stowed using a magnet. This magnet will lose strength over time and you have to re-magnetize it. Just remove the BLTouch and unscrew the middle grub screw on top, removing the probe itself. Now place a magnet near the magnet on the probe and put it back into the BLTouch body, then screw the grub screw back in. Your probe should be working properly again.
+
+## Maintenance check list
+- Make sure rollers aren't too tight / lose
+- Make sure rollers don't have any flat spots or are worn out, if they are - replace them.
+- Make sure lead screw is greased and moves smoothly. Add a bit of grease and move the Z axis up and down a few times to spread the grease.
+- Make sure belts are tight enough
+- Make sure that the hotend isn't leaking
 ## Upgrades
 I've been able to try most upgrades that people usually try. Below, I will list them and tell you if they are worth it or not, and which I would say are essential and/or recommended.
 
@@ -70,7 +82,6 @@ If you have seen this one, you might be surprised to find that I list this one h
 
 ![Dual gear extruder wear](dual-gear-extruder-wear.png)
 
-
 ### UPGRADES THAT ARE NOT NEEDED, BUT ARE NICE
 #### X axis belt tensioner (printed or metal one)
 This is a good upgrade but it can also make it tricky to align the belt properly, be mindful to make sure that the belt isn't scraping against the aluminum extrusion when it moves. 
@@ -78,7 +89,65 @@ This is a good upgrade but it can also make it tricky to align the belt properly
 #### Y axis belt tensioner (printed or metal one)
 This is less needed than the X axis since you are less likely to remove the Y belt or release the tension. You tension this very rarely anyway. 
 
+#### Creality Silent Mainboard
+I would not buy this again, simply because the SKR is better and cheaper (see good upgrades)
+
 ### UPGRADES THAT ARE GOOD
+
+#### Glass bed
+You can buy one from Creality directly, or buy a piece of glass / mirror and cut it yourself. The one from Creality has a special surface on it making parts pop off easier. Remember that you cannot print PETG straight on glass, you have to use glue stick or some other release agent to avoid destroying the glass surface.
+
+#### Spring steel sheet
+This is an upgrade to the flexible build plate that comes with the Ender 3 Pro. If you have the regular Ender 3 I would suggest getting this one right away. They usually come with a PEI sheet on it, but if you manage to destroy it or it wears out you can just peel it off and replace it with a new PEI sheet. PEI is an amazing material to print on, one of the best upgrades for quality of life. Pick between smooth and textured PEI for different surfaces beneath your prints! :)
+
+#### Aluminium extruder
+You can find these on Amazon or AliExpress for kind of cheap. They are just an aluminium version of the stock extruder, making it a worthwhile upgrade. (However, not the best upgrade)
+
+#### EZR Struder
+This is a great extruder for sure, I would put it above the aluminium extruder though, but it's more expensive.
+
+#### Raspberry Pi (Octoprint / Klipper)
+Control your printer remotely, upload GCODE via WiFi and start/stop/monitor prints from your phone/pc. This is a fantastic upgrade. Installing Klipper instead of Octoprint is for advanced users, but unlocks higher print speeds and other great features that Marlin and Octoprint does not have.
+
+#### 5015 blower fans
+I use dual 12v Sunon blower fans and with Hydra Fan Duct (see ultimate upgrades section) I can bridge across my entire build plate.
+[TODO: Add wiring scheme image here]
+
+#### Hero Me / Bullseye fan duct
+This is a good fan duct loved by many users. Easy to print and easy to install. Use PETG for this, not PLA. (See ultimate upgrades section for an even better duct)
+
+### UPGRADES THAT ARE ESSENTIAL
+These are upgrades that you should go for if you get the chance.
+
+#### Yellow bed springs / silicone bed spacers
+The stock springs are pretty poor, causing you to have to re-level your bed all the time. These are stiffer and makes sure that your bed stays level for longer. This is an essential upgrade for any Ender 3 machine and probably one of the most common ones.
+
+The silicone bed spacers just makes your bed stationary, it will always have the same level but you instead have to make sure that the gantry is aligned relative to the silicone bed spacers. This is an advanced upgrade and you should only do it if you know what you are doing.
+
+#### Capricorn PTFE tube
+This is an amazing upgrade for any machine that uses PTFE tubing. But it's even more valuable if you are using bowden instead of direct drive since the inner diameter is closer to that of the filament, making the filament flex much less in the tube, allowing for better print quality.
+
+#### PTFE couplers
+You can buy high quality PTFE couplers on Amazon and AliExpress for both the extruder and the hotend. You are 100% going to have to replace the stock couplers with these eventually, might aswell do it sooner rather than later. These are great to have as spares too, since they wear out.
+
+
+#### SKR Mini E3 v2.0 / SKR 1.4
+These are fantastic mainboards. SKR 1.4 doesn't come with drivers and is a more advanced upgrade. The SKR Mini E3 is a drop-in replacement for the stock mainboard and comes with better drivers (TMC2209) than the Creality Silent Mainboard (TMC2208). The reason I think this mainboard is essential is that is has both silent drivers, but also a 32bit chip and a bootloader, making upgrading firmware super easy and you have a lot of space to enable all the features you want, no compromises.
+
+#### Linear Advance (Marlin) / Pressure Advance (Klipper)
+This is by far the biggest jump in print quality you will see. And it's only a firmware change and then calibration on your part. But while it does work for bowden, it is more recommended changing to direct drive to get the full benefits.
+
+#### BLTouch
+
+### THE ULTIMATE UPGRADES (My current machine)
+
+#### Hydra Fan Duct
+This is an amazing and beautifully designed fan duct system. Supports dual 5015 blower fans as well and has a lot of remixes for modifications. Comes with options for 90 degree, 35 degree and 25 degree  fan ducts.
+
+#### Direct Drive conversion with a pancake stepper motor
+There's no need to use the heavy, stock extruder motor for this.
+
+
 Recommended spares:
 - Wheels
 - PTFE couplers
