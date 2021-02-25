@@ -1,9 +1,20 @@
 <img src="https://images-na.ssl-images-amazon.com/images/I/618A-KYHF1L._SL1000_.jpg" width="300px" />
 
+1. [Setup](#setup)
+2. [Maintenance](#maintenance)
+3. [Calibration](#calibration)
+4. [Troubleshooting](#troubleshooting)
+5. [Upgrades to avoid](#upgrades-to-avoid)
+6. [Upgrades that are not needed, but are nice](#upgrades-not-needed)
+7. [Upgrades that are good](#upgrades-good)
+8. [Upgrades that are essential](#upgrades-essential)
+9. [The ultimate upgrades (my printer)](#upgrades-ultimate)
+10. [Spares, maintenance and tools](#spares)
+
 # THE ENDER OF AN ERA.
 In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
 
-## Setting up your printer
+## <a href="#setup"></a> Setting up your printer
 This is a crucial step, however it is a step that is thoroughly covered in several build videos online. Tomb of 3D Printing Horrors has an amazing video on assembly that you should follow to get the frame as square as possible. Here's a couple of things that I have learned to always check for the Ender 3.
 
 ### Making sure that the Z axis extrusions are square.
@@ -52,25 +63,25 @@ Place the X gantry about halfway up from the bed on the Z axis. Now use a ruler 
 
 This can also be fixed by having dual Z leadscrews or a belted Z axis. (see upgrades section)
 
-## Calibration
+## <a href="#calibration"></a> Calibration
 
 I am just going to refer to (this site)[https://teachingtechyt.github.io/calibration.html] made by YouTuber "Teaching Tech", it has everything you will need. Calibrating your extruder E-steps and flow is most important.
 
-## Troubleshooting
-
-. . .
+## <a href="#troubleshooting"></a> Troubleshooting
 
 ### BLTouch probe not deploying/stowing properly after using it for a few months
 It is most likely not broken and I cannot believe I dont see more people talking about this. Eventually this will happen to your probe, it is because it is deployed and stowed using a magnet. This magnet will lose strength over time and you have to re-magnetize it. Just remove the BLTouch and unscrew the middle grub screw on top, removing the probe itself. Now place a magnet near the magnet on the probe and put it back into the BLTouch body, then screw the grub screw back in. Your probe should be working properly again.
 
-## Maintenance check list
+
+
+## <a href="#maintenance"></a> Maintenance check list
 - Make sure rollers aren't too tight / lose
 - Make sure rollers don't have any flat spots or are worn out, if they are - replace them.
 - Make sure lead screw is greased and moves smoothly. Add a bit of grease and move the Z axis up and down a few times to spread the grease.
 - Make sure belts are tight enough
 - Make sure that the hotend isn't leaking
 
-## UPGRADES TO AVOID
+## <a href="#upgrades-to-avoid"></a> UPGRADES TO AVOID
 ### Lead screw stabilizers
 These can actually cause the leadscrew to bind. It looks cool and sounds like a good upgrade but it requires the leadscrew to be 100% straight and have a perfect alignment with the motor, frame and trapezoidal nut. There is absolutely no need to install these.
 
@@ -79,7 +90,7 @@ If you have seen this one, you might be surprised to find that I list this one h
 
 ![Dual gear extruder wear](dual-gear-extruder-wear.png)
 
-## UPGRADES THAT ARE NOT NEEDED, BUT ARE NICE
+## <a href="#upgrades-not-needed"></a> UPGRADES THAT ARE NOT NEEDED, BUT ARE NICE
 ### X axis belt tensioner (printed or metal one)
 This is a good upgrade but it can also make it tricky to align the belt properly, be mindful to make sure that the belt isn't scraping against the aluminum extrusion when it moves. 
 
@@ -101,7 +112,7 @@ There are several printable versions of this, but it just clips on to your rolle
 ### Filament runout sensor
 Good upgrades for longer prints if your filament runs out.
 
-## UPGRADES THAT ARE GOOD
+## <a href="#upgrades-good"></a> UPGRADES THAT ARE GOOD
 
 ### Glass bed
 You can buy one from Creality directly, or buy a piece of glass / mirror and cut it yourself. The one from Creality has a special surface on it making parts pop off easier. Remember that you cannot print PETG straight on glass, you have to use glue stick or some other release agent to avoid destroying the glass surface.
@@ -120,7 +131,8 @@ Control your printer remotely, upload GCODE via WiFi and start/stop/monitor prin
 
 ### 5015 blower fans
 I use dual 12v Sunon blower fans and with Hydra Fan Duct (see ultimate upgrades section) I can bridge across my entire build plate.
-[TODO: Add wiring scheme image here]
+
+A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#12v).
 
 ### Hero Me / Bullseye fan duct
 This is a good fan duct loved by many users. Easy to print and easy to install. Use PETG for this, not PLA. (See ultimate upgrades section for an even better duct)
@@ -131,6 +143,8 @@ There are several kits for these and people seem to have many opinions regarding
 ### Replace hotend and electronics fan
 The stock fans are loud and bad. There are several better 4010 fans that are quieter and push more air. If you know your way around electronics you can even buy 12v noctua fans and use a buck converter for some ultra quiet cooling.
 
+A wire scheme for how to hook up 12V/5V fans on a 24V system, look [here](#12v).
+
 ### Micro Swiss all metal hotend
 This is another fantastic upgrade. Drop-in replacement for the stock hotend and uses the same nozzles too. All your fan ducts etc will fit just fine still. This will also allow you to print with high temperature filaments without your PTFE tube degrading and releasing neurotoxins (yikes!). This also handles heat better, allowing you to use much shorter retraction distances. Remember to PID tune after upgrading!
 
@@ -140,7 +154,7 @@ They also have an extruder which is good, but I still prefer the BMG extruder wi
 ### Cable sleeve replacement
 (This)[https://www.conrad.com/p/hellermanntyton-170-01001-twist-in-08-helagaine-meshwork-hose-black-541574] is the same one that Prusa uses on their machine, it is very stiff and almost works like a cable chain. It's available in several sizes too so you can have one for your main loom and another one for other electroncis that you attach as well.
 
-## UPGRADES THAT ARE ESSENTIAL
+## <a href="#upgrades-essential"></a> UPGRADES THAT ARE ESSENTIAL
 These are upgrades that you should go for if you get the chance.
 
 ### Yellow bed springs / silicone bed spacers
@@ -167,7 +181,7 @@ The biggest quality of life upgrade when it comes to bed leveling. Also helps yo
 ### Rear electronics case
 Essential? Yes, if you access your electronics regularly and you have a Raspberry Pi, this is such a nice upgrade because you wont have to flip your printer on the side anymore. There are multiple versions available on Thingiverse. Printing them in PETG is preferred since the electronics generate heat.
 
-## THE ULTIMATE UPGRADES (My current machine)
+## <a href="#upgrades-ultimate"></a> THE ULTIMATE UPGRADES (My current machine)
 
 ### BLTouch (described above)
 ### Spring steel sheet with PEI (described above)
@@ -187,7 +201,7 @@ This is an amazing and beautifully designed fan duct system. Supports dual 5015 
 ### Belted Z axis [(Thingiverse)](https://www.thingiverse.com/thing:4243512)
 This is a very recent mod, it attempts to solve the same issue as dual Z screws solves but this also allows you to move your Z axis at the same speed as your X and Y. So you can enable Z hop without adding almost anything to your print time. It also gets rid of all the problems that is caused by lead screws in general. Costs about as much as a dual Z kit, but I would say it is a much better upgrade. This _WILL_ increase your print quality unless you have a perfect lead screw and a perfectly level gantry.
 
-## Recommended spares and maintenance
+## <a href="#spares"></a>  Recommended spares, maintenance and tools
 - Wheels
 - PTFE couplers
 - PTFE tube
