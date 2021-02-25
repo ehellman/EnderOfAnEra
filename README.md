@@ -210,3 +210,12 @@ This is a very recent mod, it attempts to solve the same issue as dual Z screws 
 - A spare hotend (yes! this costs like 15 bucks and could save you from a long downtime if something happens to your main hotend, comes with a thermistor and heat cartridge too).
 
 During my journey I have also bought kits for JST connectors and Molex Micro-Fit 3 along with crimpers so that I can make my own cables if I want/need a longer one. It has also helped me a lot because I have connectors for the fans right at the hotend so that I can replace/disconnect them easily.
+
+## Extra
+
+### Wiring 12v/5v fans on a 24v system while still being able to control speed
+
+If you go through a buck converter with both the VCC and GND wires the capacitor on the buck converter will filter out the GND signals coming from the mainboard which is attempting to control speed, this will result in your fan being set to 100% as soon as it turns on. To work around this you have to draw power from the PSU and lower that voltage to 12V/5V, then combine that VCC with the GND from the mainboard. PLEASE NOTE: This PSU has to be the same PSU powering the mainboard. The buck converter and mainboard has to have a common GND.
+
+Wiring scheme:
+![12v/5v on 24v](12v-fans-on-24v-3d-printer.png)
