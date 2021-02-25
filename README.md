@@ -1,8 +1,5 @@
-
-
-
 # THE ENDER OF AN ERA.
-In this post I will talk a little bit about my year and a half long journey in 3D printing in general, and with my Ender 3 Pro in particular. The focus will be on which upgrades I have tried, if they are worthwhile or not and what my current 3D printer situation looks like.
+In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
 
 ## Setting up your printer
 This is a crucial step, however it is a step that is thoroughly covered in several build videos online. Tomb of 3D Printing Horrors has an amazing video on assembly that you should follow to get the frame as square as possible. Here's a couple of things that I have learned to always check for the Ender 3.
@@ -141,7 +138,7 @@ They also have an extruder which is good, but I still prefer the BMG extruder wi
 ### Cable sleeve replacement
 (This)[https://www.conrad.com/p/hellermanntyton-170-01001-twist-in-08-helagaine-meshwork-hose-black-541574] is the same one that Prusa uses on their machine, it is very stiff and almost works like a cable chain. It's available in several sizes too so you can have one for your main loom and another one for other electroncis that you attach as well.
 
-## **UPGRADES THAT ARE ESSENTIAL**
+## UPGRADES THAT ARE ESSENTIAL
 These are upgrades that you should go for if you get the chance.
 
 ### Yellow bed springs / silicone bed spacers
@@ -168,7 +165,7 @@ The biggest quality of life upgrade when it comes to bed leveling. Also helps yo
 ### Rear electronics case
 Essential? Yes, if you access your electronics regularly and you have a Raspberry Pi, this is such a nice upgrade because you wont have to flip your printer on the side anymore. There are multiple versions available on Thingiverse. Printing them in PETG is preferred since the electronics generate heat.
 
-### THE ULTIMATE UPGRADES (My current machine)
+## THE ULTIMATE UPGRADES (My current machine)
 
 ### BLTouch (described above)
 ### Spring steel sheet with PEI (described above)
