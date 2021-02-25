@@ -1,5 +1,5 @@
-![Ender 3 Pro](https://images-na.ssl-images-amazon.com/images/I/618A-KYHF1L._SL1000_.jpg)
-<img src="https://images-na.ssl-images-amazon.com/images/I/618A-KYHF1L._SL1000_.jpg" style="max-width: 300px" />
+<img src="https://images-na.ssl-images-amazon.com/images/I/618A-KYHF1L._SL1000_.jpg" width="300px" />
+
 # THE ENDER OF AN ERA.
 In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
 
