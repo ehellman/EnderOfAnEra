@@ -1,5 +1,8 @@
 <img src="https://images-na.ssl-images-amazon.com/images/I/618A-KYHF1L._SL1000_.jpg" width="300px" />
 
+# THE ENDER OF AN ERA.
+In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
+
 1. [Setup](#-setting-up-your-printer)
 2. [Calibration](#-calibration)
 3. [Maintenance check list](#-maintenance-check-list)
@@ -10,9 +13,6 @@
 8. [Upgrades that are essential](#-upgrades-that-are-essential)
 9. [The ultimate upgrades (my printer)](#-the-ultimate-upgrades-my-current-machine)
 10. [Spares, maintenance and tools](#--recommended-spares-maintenance-and-tools)
-
-# THE ENDER OF AN ERA.
-In this post I will make a summary of the things I wish I knew how to do when I first got my Ender 3 and other things I have learned along the way. The focus will be on which upgrades I have tried, if they are worthwhile or not. (I have tried most of them, I think). Right now my Ender 3 Pro is as reliable as my Prusa MK3S and produces the same, sometimes better print quality.
 
 ## Setting up your printer
 This is a crucial step, however it is a step that is thoroughly covered in several build videos online. Tomb of 3D Printing Horrors has an amazing video on assembly that you should follow to get the frame as square as possible. Here's a couple of things that I have learned to always check for the Ender 3.
